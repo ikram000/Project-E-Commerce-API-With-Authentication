@@ -57,3 +57,20 @@ export const updateProductById = async (req, res) => {
     }
 
 }
+
+//deltedproductby id
+
+export const deltedproductby= async (req,res) =>{
+     const id = req.params.id
+    try {
+        let product = await Product.findByIdAndDelete(id);
+        if (!product) return res.json({ message: "invalid id", sucess: true })
+
+        res.json({ message: " Product deletd successfully", sucess: true })
+    } catch (error) {
+        res.json(error.message);
+    }
+
+}
+
+    
