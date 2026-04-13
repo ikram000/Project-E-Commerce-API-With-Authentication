@@ -2,7 +2,6 @@ import { Product } from "../Models/Product.js"
 
 
 
-// add product
 
 export const addProduct = async (req, res) => {
 
@@ -15,7 +14,7 @@ export const addProduct = async (req, res) => {
 
 }
 
-// get all product
+
 
 export const getAllproduct = async (req, res) => {
     try {
@@ -29,7 +28,7 @@ export const getAllproduct = async (req, res) => {
 
 };
 
-//get product by id
+
 
 export const getProductById = async (req, res) => {
     const id = req.params.id
@@ -43,7 +42,7 @@ export const getProductById = async (req, res) => {
     }
 }
 
-//update product by id
+
 
 export const updateProductById = async (req, res) => {
     const id = req.params.id
@@ -58,7 +57,7 @@ export const updateProductById = async (req, res) => {
 
 }
 
-//deltedproductby id
+
 
 export const deltedproductby= async (req,res) =>{
      const id = req.params.id
