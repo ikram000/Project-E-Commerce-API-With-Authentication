@@ -24,4 +24,4 @@ else{
 }
 await cart.save();
 res.json ({messasge: 'items addes to cart',cart, sucess:true})
-}
+};
