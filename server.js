@@ -4,6 +4,7 @@ import bodyParser from 'express';
 import userRouter from './Routes/user.js'
 import productRouter from "./Routes/product.js"
 import {config} from "dotenv"
+import cartRouter from './Routes/cart.js';
 const app = express();
 app.use(bodyParser.json())
 
@@ -15,6 +16,9 @@ app.use('/api/user', userRouter)
 
 //product router
 app.use('/api/product',productRouter)
+
+//cart router
+app.use('/api/cart',cartRouter)
 
 //home route
 
